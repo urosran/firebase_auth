@@ -2,7 +2,7 @@ import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
 import app from "./base.js";
 import { AuthContext } from "./Auth.js";
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 var provider = new firebase.auth.GoogleAuthProvider();
 
 const Login = ({ history }) => {
