@@ -2,12 +2,14 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 
 const app = firebase.initializeApp({
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
-  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
+  apiKey: "AIzaSyCpg-3So0pAzTHvA_RUSTJrvgkQos2qXC4",
+  authDomain: "survey-1571413046810.firebaseapp.com",
+  databaseURL: "https://survey-1571413046810.firebaseio.com",
+  projectId: "survey-1571413046810",
+  storageBucket: "survey-1571413046810.appspot.com",
+  messagingSenderId: "808796572426",
+  appId: "1:808796572426:web:6d4a584d904eb6590ec8f3",
+  measurementId: "G-LYW6PQR51R"
 });
 
 export default app;

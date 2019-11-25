@@ -9,11 +9,13 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     app.auth().onAuthStateChanged(setCurrentUser);
   }, []);
+  const provider = app.auth.GoogleAuthProvider;
 
   return (
     <AuthContext.Provider
       value={{
-        currentUser
+        currentUser,
+        provider
       }}
     >
       {children}
